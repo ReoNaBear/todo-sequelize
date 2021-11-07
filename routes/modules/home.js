@@ -3,7 +3,7 @@ const router = express.Router()
 
 const db = require('../../models')
 const Todo = db.Todo
-const user = db.User
+const User = db.User
 
 router.get('/', (req, res) => {
   User.findByPk(req.user.id)
